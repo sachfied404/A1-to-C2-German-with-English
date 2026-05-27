@@ -1,0 +1,30 @@
+package com.example
+
+val c1VocabularyData = listOf(
+    VocabularyWord("Hypothese", "Hypothesis", "hoo-po-TEH-zeh", listOf(ExampleSentence("Diese Hypothese muss überprüft werden.", "// This hypothesis must be tested.")), "Type: Noun (f) | Category: Academic | IPA: /hypoˈteːzə/", "C1"),
+    VocabularyWord("Empirisch", "Empirical", "em-PEE-rish", listOf(ExampleSentence("Die Studie basiert auf empirischen Daten.", "// The study is based on empirical data.")), "Type: Adjective | Category: Academic | IPA: /ɛmˈpiːʁɪʃ/", "C1"),
+    VocabularyWord("Paradigma", "Paradigm", "pah-rah-DIG-mah", listOf(ExampleSentence("Ein neues wissenschaftliches Paradigma.", "// A new scientific paradigm.")), "Type: Noun (n) | Category: Academic | IPA: /paʁaˈdɪɡma/", "C1"),
+    VocabularyWord("Algorithmus", "Algorithm", "al-go-REET-moos", listOf(ExampleSentence("Der Algorithmus wurde optimiert.", "// The algorithm was optimized.")), "Type: Noun (m) | Category: Technology | IPA: /alɡɔˈʁɪtmʊs/", "C1"),
+    VocabularyWord("Verschlüsselung", "Encryption", "fair-SHLOOS-el-oong", listOf(ExampleSentence("Ende-zu-Ende-Verschlüsselung ist wichtig.", "// End-to-end encryption is important.")), "Type: Noun (f) | Category: Technology | IPA: /fɛɐ̯ˈʃlʏslʊŋ/", "C1"),
+    VocabularyWord("Entfremdung", "Alienation", "ent-FRAYM-doong", listOf(ExampleSentence("Die Entfremdung zwischen den Generationen wächst.", "// The alienation between generations is growing.")), "Type: Noun (f) | Category: Society | IPA: /ɛntˈfʁaɪ̯mdʊŋ/", "C1"),
+    VocabularyWord("Genugtuung", "Satisfaction / Amends", "geh-NOOK-toong", listOf(ExampleSentence("Die Entschuldigung war mir keine Genugtuung.", "// The apology was no satisfaction to me.")), "Type: Noun (f) | Category: Emotions | IPA: /ɡəˈnuːktuːŋ/", "C1"),
+    VocabularyWord("Wehmut", "Melancholy / Wistfulness", "VAY-mot", listOf(ExampleSentence("Mit Wehmut dachte sie an die Vergangenheit.", "// With melancholy, she thought of the past.")), "Type: Noun (f) | Category: Emotions | IPA: /ˈveːmuːt/", "C1"),
+    VocabularyWord("Synergie", "Synergy", "zeen-ER-ghee", listOf(ExampleSentence("Wir nutzen Synergieeffekte.", "// We utilize synergy effects.")), "Type: Noun (f) | Category: Business | IPA: /zynɛʁˈɡiː/", "C1"),
+    VocabularyWord("Restrukturierung", "Restructuring", "ray-struk-too-REER-oong", listOf(ExampleSentence("Die Restrukturierung des Unternehmens läuft.", "// The restructuring of the company is underway.")), "Type: Noun (f) | Category: Business | IPA: /ʁɛstʁʊktuˈʁiːʁʊŋ/", "C1"),
+    VocabularyWord("Flüchtig", "Fleeting / Transient", "FLÜKH-tig", listOf(ExampleSentence("Der Ruhm ist flüchtig.", "// Fame is fleeting.")), "Type: Adjective | Category: Abstract | IPA: /ˈflʏçtɪç/", "C1"),
+    VocabularyWord("Augenblicklich", "Momentary / Instantaneous", "OW-gen-blikh-likh", listOf(ExampleSentence("Die augenblick Situation ist kritisch.", "// The current/momentary situation is critical.")), "Type: Adjective | Category: Time | IPA: /ˈaʊ̯ɡn̩blɪklɪç/", "C1"),
+    VocabularyWord("Epochal", "Epoch-making / Monumental", "eh-pok-AHL", listOf(ExampleSentence("Das war ein epochaler Wendepunkt.", "// That was a monumental turning point.")), "Type: Adjective | Category: History | IPA: /ɛpɔˈkaːl/", "C1"),
+    VocabularyWord("Erkenntnis", "Realization / Insight", "air-KENT-nis", listOf(ExampleSentence("Das war eine wichtige Erkenntnis.", "// That was an important realization.")), "Type: Noun (f) | Category: Abstract | IPA: /ɛɐ̯ˈkɛntnɪs/", "C1"),
+    VocabularyWord("In Anbetracht der aktuellen Lage müssen wir unsere Strategie grundlegend überdenken.", "In view of the current situation, we must fundamentally rethink our strategy.", "-", emptyList(), "Category: Practice Sentences", "C1"),
+    VocabularyWord("Es ist unbestreitbar, dass der Klimawandel eine existentielle Bedrohung darstellt.", "It is undeniable that climate change represents an existential threat.", "-", emptyList(), "Category: Practice Sentences", "C1"),
+    VocabularyWord("Die Ergebnisse der Untersuchung lassen darauf schließen, dass Handlungsbedarf besteht.", "The results of the investigation suggest that there is a need for action.", "-", emptyList(), "Category: Practice Sentences", "C1"),
+    VocabularyWord("Hinsichtlich der Effizienz gibt es noch erhebliches Verbesserungspotenzial.", "With regard to efficiency, there is still significant potential for improvement.", "-", emptyList(), "Category: Practice Sentences", "C1"),
+    VocabularyWord("Es gilt, ein ausgewogenes Verhältnis zwischen Freiheit und Sicherheit zu finden.", "It is necessary to find a balanced relationship between freedom and security.", "-", emptyList(), "Category: Practice Sentences", "C1"),
+    VocabularyWord("die Souveränität", "sovereignty", "-", emptyList(), "Category: Politics", "C1"),
+    VocabularyWord("das Abkommen", "agreement", "-", emptyList(), "Category: Politics", "C1"),
+    VocabularyWord("hinsichtlich (+ Gen)", "with regard to", "-", emptyList(), "Category: Connectors", "C1"),
+    VocabularyWord("anlässlich (+ Gen)", "on the occasion of", "-", emptyList(), "Category: Connectors", "C1"),
+    VocabularyWord("insistieren auf (+ Dat)", "to insist on", "-", listOf(ExampleSentence("Er insistiert auf seiner Meinung.", "// He insists on his opinion.")), "Category: Verb Prepositions", "C1"),
+    VocabularyWord("Seinen Senf dazugeben", "To put one's oar in / give unsolicited advice", "ZY-nen ZENFT dah-tsoo-GAY-ben", listOf(ExampleSentence("Er muss immer seinen Senf dazugeben.", "// He always has to put his oar in.")), "Type: Idiom | IPA: /ˈzaɪ̯nən zɛnft daˈtsuːɡeːbn̩/", "C1"),
+    VocabularyWord("Den Bogen überspannen", "To go too far / Overstep the mark", "dayn BO-gen OOB-er-shpan-nen", listOf(ExampleSentence("Mit dieser Forderung hat er den Bogen überspannt.", "// With this demand, he went too far.")), "Type: Idiom | IPA: /|deːn ˈboːɡn̩ ˈyːbɐʃpanən/", "C1")
+)

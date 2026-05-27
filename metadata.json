@@ -1,0 +1,6 @@
+{
+  "name": "German Mastery",
+  "description": "A dark, modern language-learning dashboard for German vocabulary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

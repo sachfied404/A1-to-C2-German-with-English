@@ -1,0 +1,26 @@
+package com.example
+
+val c2VocabularyData = listOf(
+    VocabularyWord("Erkenntnistheorie", "Epistemology", "air-KENT-nis-tay-o-REE-eh", listOf(ExampleSentence("Die Erkenntnistheorie befasst sich mit dem Wissen.", "// Epistemology deals with knowledge.")), "Type: Noun (f) | Category: Philosophy | IPA: /ɛɐ̯ˈkɛntnɪsteːoˈʁiː/", "C2"),
+    VocabularyWord("Hermeneutik", "Hermeneutics", "hair-meh-NOY-tik", listOf(ExampleSentence("Die Hermeneutik ist die Lehre vom Verstehen.", "// Hermeneutics is the doctrine of understanding.")), "Type: Noun (f) | Category: Philosophy | IPA: /hɛʁməˈnɔɪ̯tɪk/", "C2"),
+    VocabularyWord("Diskrepanz", "Discrepancy", "dis-kre-PANTS", listOf(ExampleSentence("Es gibt eine eklatante Diskrepanz zwischen Theorie und Praxis.", "// There is a glaring discrepancy between theory and practice.")), "Type: Noun (f) | Category: Abstract | IPA: /dɪskʁepanʦ/", "C2"),
+    VocabularyWord("Seinsvergessenheit", "Forgetfulness of being", "zynes-fair-ge-SSEN-hyte", listOf(ExampleSentence("Die Seinsvergessenheit ist ein zentrales Motiv.", "// The forgetfulness of being is a central motif.")), "Type: Noun (f) | Category: Philosophy | IPA: /ˈzaɪ̯nsfɛɐ̯ɡɛsn̩haɪ̯t/", "C2"),
+    VocabularyWord("Dasein", "Existence / Being-there", "DAH-zeyen", listOf(ExampleSentence("Das Dasein ist immer schon geworfen.", "// Existence is always already thrown.")), "Type: Noun (n) | Category: Philosophy | IPA: /ˈdaːzaɪ̯n/", "C2"),
+    VocabularyWord("Inwiefern", "To what extent", "in-VEE-fairn", listOf(ExampleSentence("Inwiefern hat sich die Situation verbessert?", "// To what extent has the situation improved?")), "Type: Conjunction | Category: Grammar | IPA: /ɪnˈviːfɛʁn/", "C2"),
+    VocabularyWord("Insofern", "Insofar / To that extent", "in-zoh-FAIRN", listOf(ExampleSentence("Insofern bist du recht, als dass...", "// Insofar you are right, in that...")), "Type: Conjunction | Category: Grammar | IPA: /ɪnzoˈfɛʁn/", "C2"),
+    VocabularyWord("Zusehends", "Increasingly / Visibly", "tsoo-ZAY-ends", listOf(ExampleSentence("Die Lage verschlechtert sich zusehends.", "// The situation is deteriorating visibly.")), "Type: Adverb | Category: Grammar | IPA: /tsuˈzeːənd͡s/", "C2"),
+    VocabularyWord("Gleichwohl", "Nevertheless", "GLYKH-vohl", listOf(ExampleSentence("Gleichwohl muss man die Risiken bedenken.", "// Nonetheless, one must consider the risks.")), "Type: Adverb | Category: Grammar | IPA: /ˈɡlaɪ̯cvoːl/", "C2"),
+    VocabularyWord("Killefit", "Chill / Relax", "KIL-leh-fit", listOf(ExampleSentence("Lass uns einfach killefiten.", "// Let's just chill.")), "Type: Verb/Slang | Category: Slang | IPA: /ˈkɪləfɪt/", "C2"),
+    VocabularyWord("Muggaseggele", "A tiny amount", "MOOG-ah-seg-geh-leh", listOf(ExampleSentence("Einen Muggaseggele Zeit habe ich nicht.", "// I don't have a tiny bit of time.")), "Type: Noun (n) | Category: Regional | IPA: /ˈmʊɡəzɛɡələ/", "C2"),
+    VocabularyWord("Biddscheen", "Very little", "BID-sheyn", listOf(ExampleSentence("Ein Biddscheen reicht mir.", "// A tiny little bit is enough for me.")), "Type: Noun (n) | Category: Regional | IPA: /ˈbɪtʃeːn/", "C2"),
+    VocabularyWord("Die filigrane Ausarbeitung des Werks zeugt von einer bemerkenswerten Detailverliebtheit.", "The delicate elaboration of the work testifies to a remarkable attention to detail.", "-", emptyList(), "Category: Practice Sentences", "C2"),
+    VocabularyWord("Es obliegt der Judikative, die Verfassungsmäßigkeit dieser Novelle eingehend zu prüfen.", "It is the responsibility of the judiciary to examine the constitutionality of this amendment in detail.", "-", emptyList(), "Category: Practice Sentences", "C2"),
+    VocabularyWord("In der Retrospektive erweist sich das damalige Prozedere als eklatanter Verstoß gegen geltendes Recht.", "In retrospect, the procedure at that time proves to be a blatant violation of current law.", "-", emptyList(), "Category: Practice Sentences", "C2"),
+    VocabularyWord("die Eloquenz", "eloquence", "-", emptyList(), "Category: Rhetoric", "C2"),
+    VocabularyWord("der Tatbestand", "facts of a case", "-", emptyList(), "Category: Law", "C2"),
+    VocabularyWord("ungeachtet (+ Gen)", "notwithstanding", "-", emptyList(), "Category: Connectors", "C2"),
+    VocabularyWord("sich befleißigen (+ Gen)", "to practice", "-", listOf(ExampleSentence("Er befleißigt sich einer gewählten Ausdrucksweise.", "// He practices a chosen mode of expression.")), "Category: Verb Prepositions", "C2"),
+    VocabularyWord("Um den heißen Brei herumreden", "To beat around the bush", "oom dayn HY-sen brye hair-oom-RAY-den", listOf(ExampleSentence("Red nicht um den heißen Brei herum!", "// Don't beat around the bush!")), "Type: Idiom | IPA: /ʊm deːn ˈhaɪ̯sn̩ bʁaɪ̯ hɛɐ̯ˈʊmʁeːdn̩/", "C2"),
+    VocabularyWord("Das ist ein Danaergeschenk", "Beware of Greeks bearing gifts", "dahs ist eyen DAH-nah-air-ge-shenkt", listOf(ExampleSentence("Seine Hilfe ist ein Danaergeschenk.", "// His help is a Trojan horse.")), "Type: Idiom | IPA: /das ɪst aɪ̯n ˈdaːnaːɐ̯ɡəʃɛŋk/", "C2"),
+    VocabularyWord("Die Kirche im Dorf lassen", "Not to go overboard", "dee KIR-kheh im dorf LAH-sen", listOf(ExampleSentence("Lass die Kirche im Dorf!", "// Keep things in proportion!")), "Type: Idiom | IPA: /diː ˈkɪʁçə ɪm dɔʁf ˈlaːsn̩/", "C2")
+)
