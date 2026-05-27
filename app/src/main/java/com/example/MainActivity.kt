@@ -54,13 +54,21 @@ class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
         super.onCreate(savedInstanceState)
         
         // Initialize Speech engine for interactive German pronunciation help
-        tts = TextToSpeech(this, this)
+        try {
+            tts = TextToSpeech(applicationContext, this)
+        } catch (e: Exception) {
+            Log.e("TTS", "Failed to initialize TTS engine: ${e.message}", e)
+        }
 
         // Make system status and navigation bars fully transparent with light icons
-        enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.dark(android.graphics.Color.TRANSPARENT),
-            navigationBarStyle = SystemBarStyle.dark(android.graphics.Color.TRANSPARENT)
-        )
+        try {
+            enableEdgeToEdge(
+                statusBarStyle = SystemBarStyle.dark(android.graphics.Color.TRANSPARENT),
+                navigationBarStyle = SystemBarStyle.dark(android.graphics.Color.TRANSPARENT)
+            )
+        } catch (e: Exception) {
+            Log.e("MainActivity", "Failed to enable edge to edge: ${e.message}", e)
+        }
 
         setContent {
             MyApplicationTheme {
@@ -81,28 +89,57 @@ class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            val result = tts?.setLanguage(Locale.GERMAN)
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TTS", "German language is not supported or missing data")
-            } else {
-                isTtsReady = true
+            try {
+                val currentTts = tts
+                if (currentTts != null) {
+                    val result = currentTts.setLanguage(Locale.GERMAN)
+                    if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                        Log.e("TTS", "German language is not supported or missing data")
+                    } else {
+                        isTtsReady = true
+                    }
+                } else {
+                    isTtsReady = false
+                }
+            } catch (e: Exception) {
+                Log.e("TTS", "Error during TTS onInit language setup: ${e.message}", e)
             }
         } else {
-            Log.e("TTS", "Text-to-Speech initialization failed")
+            Log.e("TTS", "Text-to-Speech initialization failed with status: $status")
         }
     }
 
     private fun speak(text: String) {
-        if (isTtsReady) {
-            tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "GermanSpeech")
-        } else {
-            Log.e("TTS", "TTS Engine is not ready or failed to initialize")
+        try {
+            if (tts == null) {
+                tts = TextToSpeech(applicationContext, this)
+            }
+            val currentTts = tts
+            if (currentTts != null) {
+                try {
+                    val result = currentTts.setLanguage(Locale.GERMAN)
+                    if (result != TextToSpeech.LANG_MISSING_DATA && result != TextToSpeech.LANG_NOT_SUPPORTED) {
+                        isTtsReady = true
+                    }
+                } catch (e: Exception) {
+                    Log.e("TTS", "Failed to set language on demand: ${e.message}")
+                }
+                currentTts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "GermanSpeech")
+            } else {
+                Log.e("TTS", "TTS Engine is null, cannot speak")
+            }
+        } catch (e: Exception) {
+            Log.e("TTS", "Error during speak: ${e.message}", e)
         }
     }
 
     override fun onDestroy() {
-        tts?.stop()
-        tts?.shutdown()
+        try {
+            tts?.stop()
+            tts?.shutdown()
+        } catch (e: Exception) {
+            Log.e("TTS", "Error during onDestroy shutting down TTS: ${e.message}", e)
+        }
         super.onDestroy()
     }
 }

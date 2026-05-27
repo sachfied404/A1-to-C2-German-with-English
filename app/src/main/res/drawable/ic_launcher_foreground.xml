@@ -3,6 +3,6 @@
     <item
         android:width="66dp"
         android:height="66dp"
-        android:drawable="@drawable/german_mastery_icon_1779878199432"
+        android:drawable="@drawable/logo_ende_icon_1779884668360"
         android:gravity="center" />
 </layer-list>
