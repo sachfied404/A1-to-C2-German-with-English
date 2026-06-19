@@ -13,6 +13,18 @@ data class VocabularyWord(
 
 val a1VocabularyData = listOf(
     // Core Vocabulary
+    // Missing words from basic lists
+    VocabularyWord("Guten Abend", "Good evening", "GOO-ten AH-bent", listOf(ExampleSentence("Guten Abend, wie war dein Tag?", "// Good evening, how was your day?")), "Type: Phrase | Category: Greetings", "A1"),
+    VocabularyWord("Leute", "People", "LOY-tuh", listOf(ExampleSentence("Die Leute hier sind sehr nett.", "// The people here are very nice.")), "Type: Noun (pl) | Category: People", "A1"),
+    VocabularyWord("Wohnung", "Apartment", "VO-nung", listOf(ExampleSentence("Ich suche eine neue Wohnung.", "// I am looking for a new apartment.")), "Type: Noun (f) | Category: Places", "A1"),
+    VocabularyWord("Büro", "Office", "bü-RO", listOf(ExampleSentence("Er arbeitet im Büro.", "// He works in the office.")), "Type: Noun (n) | Category: Places", "A1"),
+    VocabularyWord("Restaurant", "Restaurant", "res-tow-RAHNT", listOf(ExampleSentence("Wir essen heute Abend im Restaurant.", "// We are eating at the restaurant tonight.")), "Type: Noun (n) | Category: Places", "A1"),
+    VocabularyWord("Mittagessen", "Lunch", "MIT-ahg-ess-en", listOf(ExampleSentence("Das Mittagessen ist um 12 Uhr.", "// Lunch is at 12 o'clock.")), "Type: Noun (n) | Category: Food", "A1"),
+    VocabularyWord("Abendessen", "Dinner", "AH-bent-ess-en", listOf(ExampleSentence("Was gibt es zum Abendessen?", "// What is for dinner?")), "Type: Noun (n) | Category: Food", "A1"),
+    VocabularyWord("Glücklich", "Happy", "GLÜK-lish", listOf(ExampleSentence("Ich bin sehr glücklich.", "// I am very happy.")), "Type: Adjective | Category: Feelings", "A1"),
+    VocabularyWord("Hungrig", "Hungry", "HOONG-rish", listOf(ExampleSentence("Bist du hungrig?", "// Are you hungry?")), "Type: Adjective | Category: Feelings", "A1"),
+    VocabularyWord("Vielleicht", "Maybe / Perhaps", "fee-LYEKT", listOf(ExampleSentence("Vielleicht komme ich später.", "// Maybe I will come later.")), "Type: Adverb | Category: Connectors", "A1"),
+
     VocabularyWord("Hallo", "Hello", "HAH-lo", listOf(ExampleSentence("Hallo, wie geht es dir?", "// Hello, how are you? (informal)")), "Type: Interjection | Category: Greetings | IPA: /ˈhalo/", "A1"),
     VocabularyWord("Guten Morgen", "Good morning", "GOO-ten MOR-gen", listOf(ExampleSentence("Guten Morgen, Herr Müller.", "// Good morning, Mr. Müller.")), "Type: Phrase | Category: Greetings | IPA: /ˈɡuːtn̩ ˈmɔʁɡn̩/", "A1"),
     VocabularyWord("Guten Tag", "Good day", "GOO-ten tahk", listOf(ExampleSentence("Guten Tag, was kann ich für Sie tun?", "// Good day, what can I do for you?")), "Type: Phrase | Category: Greetings | IPA: /ˈɡuːtn̩ ˈtaːk/", "A1"),
